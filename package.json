@@ -1,0 +1,25 @@
+{
+  "name": "tests-that-dont-suck",
+  "version": "1.0.0",
+  "description": "Tests that don't suck example code for talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha ./test/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dject": "^1.9.3",
+    "signet": "^6.6.2"
+  },
+  "devDependencies": {
+    "approvals": "^2.1.2",
+    "approvals-config-factory": "^1.0.0",
+    "chai": "^4.1.2",
+    "datamother": "^2.2.5",
+    "eslint": "^4.19.1",
+    "mocha": "^5.1.0",
+    "sinon": "^4.5.0",
+    "stubcontractor": "^0.5.2"
+  }
+}
