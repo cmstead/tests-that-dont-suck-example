@@ -2,6 +2,7 @@
 
 const container = require('../container');
 const stubcontractor = require('../stubcontractorConfig');
+const datamotherContainer = require('./test-utils/datamother-config');
 
 const sinon = require('sinon');
 
