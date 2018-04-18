@@ -8,7 +8,7 @@ const sinon = require('sinon');
 
 require('./test-utils/approvalsConfig')();
 
-describe('WidgeTest9000 Vice', function () {
+describe('WidgeTest9000', function () {
 
     let widgetFactory;
     let widgeTest9000;
