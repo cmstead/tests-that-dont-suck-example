@@ -34,7 +34,7 @@ describe('WidgeTest9000', function () {
         widgetFactory = childContainer.build('widgetFactory');
     });
 
-    it('logs out results from widget tests', function() {
+    it('tests a widget with 20 different, increasing voltages', function() {
         const widget = widgetFactory({
             maxVoltage: 9,
             humPeakVoltage: 10,
