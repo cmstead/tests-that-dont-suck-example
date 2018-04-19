@@ -3,9 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-function isFile(basePath, fileName) {
-    const filePath = path.join(basePath, fileName);
-
+function isFile(filePath) {
     try {
         return fs.lstatSync(filePath).isFile();
     } catch (e) {
@@ -23,8 +21,7 @@ function isDirectory(basePath, fileName) {
     }
 }
 
-function loadModule(basePath, fileName) {
-    const filePath = path.join(basePath, fileName);
+function loadModule(filePath) {
     return require(filePath);
 }
 
@@ -41,8 +38,6 @@ function loadFilesFromPaths(filePaths, dataContainer, onDirectoryAction) {
 
     return dataContainer;
 }
-
-
 
 function getFilePaths(basePath) {
     const dotNamesPattern = /^\.+$/;
