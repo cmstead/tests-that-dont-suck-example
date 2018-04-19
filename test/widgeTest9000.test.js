@@ -1,8 +1,8 @@
 'use strict';
 
 const container = require('../container');
+const dataMother = require('./test-utils/datamother-config');
 const stubcontractor = require('../stubcontractorConfig');
-const datamotherContainer = require('./test-utils/datamother-config');
 
 const sinon = require('sinon');
 
