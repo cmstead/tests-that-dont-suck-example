@@ -22,7 +22,7 @@ describe('WidgeTest9000', function () {
         };
 
         const timersFake = {
-            setTimeout: function(action) {
+            setTimeout: function (action) {
                 action();
             }
         };
@@ -34,23 +34,25 @@ describe('WidgeTest9000', function () {
         widgetFactory = childContainer.build('widgetFactory');
     });
 
-    it('tests a widget with 20 different, increasing voltages', function() {
-        const widget = widgetFactory({
+    it('tests a widget with 20 different, increasing voltages', function () {
+        const widgetConfig = {
             maxVoltage: 9,
             humPeakVoltage: 10,
             jitterPeakVoltage: 7.3
-        });
+        };
 
-        widgeTest9000.test(
-            widget,
-            {
-                humTolerance: 0.5,
-                jitterTolerance: 0.2,
-                displayText: 'hi',
-                maxVoltage: 9
-            },
-            () => {}
-        );
+        const widgeTestConfig = {
+            humTolerance: 0.5,
+            jitterTolerance: 0.2,
+            displayText: 'hi',
+            maxVoltage: 9
+        };
+
+        const callback = () => { };
+
+        const widget = widgetFactory(widgetConfig);
+
+        widgeTest9000.test(widget, widgeTestConfig, callback);
 
         const consoleOutputLines = loggerFake.log.args.map(callArgs => callArgs.join('\n'));
         const consoleOutput = consoleOutputLines.join('\n');
