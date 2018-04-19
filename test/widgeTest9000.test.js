@@ -64,10 +64,14 @@ describe('WidgeTest9000', function () {
 
         widgeTest9000.test(widget, widgeTestConfig, callback);
 
-        const consoleOutputLines = loggerFake.log.args.map(callArgs => callArgs.join('\n'));
-        const consoleOutput = consoleOutputLines.join('\n');
+        const setVoltageSpy = widgetConnectionFake.setVoltage.getOnCallAction();
 
-        this.verify(consoleOutput);
+        const callResults = {
+            callCount: setVoltageSpy.callCount,
+            args: setVoltageSpy.args.map(argSet => argSet.toString())
+        };
+
+        this.verify(JSON.stringify(callResults, null, 4));
     });
 
 });

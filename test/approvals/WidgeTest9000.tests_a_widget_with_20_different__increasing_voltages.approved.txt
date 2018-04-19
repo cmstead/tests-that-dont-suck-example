@@ -1,142 +1,26 @@
-
-Setting voltage to 0
----------------------------
-
-
-Setting voltage to 0.45
----------------------------
-
-Current hum: 0.04499999999999993
-Current display jitter: 0.0077054794520547976
-
-Setting voltage to 0.9
----------------------------
-
-Current hum: 0.09000000000000004
-Current display jitter: 0.015410958904109595
-
-Setting voltage to 1.35
----------------------------
-
-Current hum: 0.13499999999999995
-Current display jitter: 0.023116438356164393
-
-Setting voltage to 1.8
----------------------------
-
-Current hum: 0.18000000000000008
-Current display jitter: 0.030821917808219176
-
-Setting voltage to 2.25
----------------------------
-
-Current hum: 0.225
-Current display jitter: 0.038527397260273974
-
-Setting voltage to 2.7
----------------------------
-
-Current hum: 0.27
-Current display jitter: 0.04623287671232877
-
-Setting voltage to 3.1500000000000004
----------------------------
-
-Current hum: 0.31500000000000006
-Current display jitter: 0.05393835616438357
-
-Setting voltage to 3.6000000000000005
----------------------------
-
-Current hum: 0.36000000000000004
-Current display jitter: 0.06164383561643837
-
-Setting voltage to 4.050000000000001
----------------------------
-
-Current hum: 0.4050000000000001
-Current display jitter: 0.06934931506849316
-
-Setting voltage to 4.500000000000001
----------------------------
-
-Current hum: 0.45000000000000007
-Current display jitter: 0.07705479452054796
-
-Setting voltage to 4.950000000000001
----------------------------
-
-Current hum: 0.4950000000000001
-Current display jitter: 0.08476027397260276
-
-Setting voltage to 5.400000000000001
----------------------------
-
-Current hum: 0.5400000000000001
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.09246575342465756
-
-Setting voltage to 5.850000000000001
----------------------------
-
-Current hum: 0.5850000000000002
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.10017123287671235
-
-Setting voltage to 6.300000000000002
----------------------------
-
-Current hum: 0.6300000000000001
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.10787671232876715
-
-Setting voltage to 6.750000000000002
----------------------------
-
-Current hum: 0.6750000000000002
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.11558219178082195
-
-Setting voltage to 7.200000000000002
----------------------------
-
-Current hum: 0.7200000000000002
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.12328767123287675
-
-Setting voltage to 7.650000000000002
----------------------------
-
-Current hum: 0.7650000000000002
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.11900684931506846
-
-Setting voltage to 8.100000000000001
----------------------------
-
-Current hum: 0.8100000000000002
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.11130136986301367
-
-Setting voltage to 8.55
----------------------------
-
-Current hum: 0.8550000000000001
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.10359589041095889
-
-Setting voltage to 9
----------------------------
-
-Current hum: 0.9
-Hum exceeded acceptable tolerance! Max acceptable hum: 0.5
-
-Current display jitter: 0.0958904109589041
+{
+    "callCount": 21,
+    "args": [
+        "0",
+        "0.45",
+        "0.9",
+        "1.35",
+        "1.8",
+        "2.25",
+        "2.7",
+        "3.1500000000000004",
+        "3.6000000000000005",
+        "4.050000000000001",
+        "4.500000000000001",
+        "4.950000000000001",
+        "5.400000000000001",
+        "5.850000000000001",
+        "6.300000000000002",
+        "6.750000000000002",
+        "7.200000000000002",
+        "7.650000000000002",
+        "8.100000000000001",
+        "8.55",
+        "9"
+    ]
+}
