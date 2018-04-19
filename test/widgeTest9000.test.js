@@ -35,21 +35,9 @@ describe('WidgeTest9000', function () {
     });
 
     it('tests a widget with 20 different, increasing voltages', function () {
-        const widgetConfig = {
-            maxVoltage: 9,
-            humPeakVoltage: 10,
-            jitterPeakVoltage: 7.3
-        };
-
-        const widgeTestConfig = {
-            humTolerance: 0.5,
-            jitterTolerance: 0.2,
-            displayText: 'hi',
-            maxVoltage: 9
-        };
-
+        const widgetConfig = dataMother.buildData('widgetConfig');
+        const widgeTestConfig = dataMother.buildData('widgeTestConfig');
         const callback = () => { };
-
         const widget = widgetFactory(widgetConfig);
 
         widgeTest9000.test(widget, widgeTestConfig, callback);
