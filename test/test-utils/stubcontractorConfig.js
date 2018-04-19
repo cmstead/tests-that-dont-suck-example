@@ -1,8 +1,10 @@
 'use strict';
 
+const path = require('path');
+
 var config = {
-    cwd: `${__dirname}/dependencies`,
-    modulePaths: [
+    cwd: path.join(__dirname, '../../dependencies'),
+    sourceDirectories: [
         './',
         'wrapped-modules'
     ]

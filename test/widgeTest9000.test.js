@@ -2,7 +2,7 @@
 
 const container = require('../container');
 const dataMother = require('./test-utils/datamother-config');
-const stubcontractor = require('../stubcontractorConfig');
+const stubcontractor = require('./test-utils/stubcontractorConfig');
 
 const sinon = require('sinon');
 
