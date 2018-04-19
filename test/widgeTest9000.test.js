@@ -36,9 +36,10 @@ describe('WidgeTest9000', function () {
 
     it('tests a widget with 20 different, increasing voltages', function () {
         const widgetConfig = dataMother.buildData('widgetConfig');
+        const widget = widgetFactory(widgetConfig);
+        
         const widgeTestConfig = dataMother.buildData('widgeTestConfig');
         const callback = () => { };
-        const widget = widgetFactory(widgetConfig);
 
         widgeTest9000.test(widget, widgeTestConfig, callback);
 
