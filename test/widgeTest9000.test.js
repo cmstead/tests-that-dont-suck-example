@@ -10,6 +10,7 @@ require('./test-utils/approvalsConfig')();
 
 describe('WidgeTest9000', function () {
 
+    let widgetConnectionFake;
     let widgetFactory;
     let widgeTest9000;
     let loggerFake;
@@ -27,8 +28,28 @@ describe('WidgeTest9000', function () {
             }
         };
 
+        widgetConnectionFake = stubcontractor.getApiEndpoints(
+            'widgetConnector',
+            ['setVoltage']
+        );
+
+        widgetConnectionFake.setVoltage.onCall(sinon.spy());
+
+        const testHelperFake = stubcontractor.getApiEndpoints(
+            'testHelper',
+            ['setup']
+        );
+
+        testHelperFake.setup.onCall(function() {
+            return {
+                widgetConnection: widgetConnectionFake,
+                maxVoltage: 9
+            };
+        });
+
         childContainer.register(() => loggerFake, 'logger');
         childContainer.register(() => timersFake, 'timers');
+        childContainer.register(() => testHelperFake, 'testHelper');
 
         widgeTest9000 = childContainer.build('widgeTest9000');
         widgetFactory = childContainer.build('widgetFactory');
