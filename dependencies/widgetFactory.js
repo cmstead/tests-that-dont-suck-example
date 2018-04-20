@@ -52,8 +52,12 @@ function widgetFactory(signet) {
         }
 
         return {
-            getHum: getHum,
-            getJitter: getJitter,
+            getHum: signet.enforce(
+                '() => humValue',
+                getHum),
+            getJitter: signet.enforce(
+                '() => jitterValue',
+                getJitter),
 
             setDisplayText: signet.enforce(
                 'displayText => undefined',

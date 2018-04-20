@@ -9,6 +9,9 @@ signet.alias('action', 'function');
 signet.alias('humTolerance', 'boundedNumber<0, 1>');
 signet.alias('jitterTolerance', 'boundedNumber<0, 1>');
 
+signet.alias('humValue', 'boundedNumber<0, 1>');
+signet.alias('jitterValue', 'boundedNumber<0, 1>');
+
 signet.alias('voltage', 'leftBoundedNumber<0>');
 signet.alias('maxVoltage', 'leftBoundedInt<0>');
 
