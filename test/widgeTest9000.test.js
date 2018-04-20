@@ -74,4 +74,18 @@ describe('WidgeTest9000', function () {
         this.verify(JSON.stringify(callResults, null, 4));
     });
 
+    it('logs each time the voltage is set', function () {
+        const widgetConfig = dataMother.buildData('widgetConfig');
+        const widget = widgetFactory(widgetConfig);
+        
+        const widgeTestConfig = dataMother.buildData('widgeTestConfig');
+        const callback = () => { };
+
+        widgeTest9000.test(widget, widgeTestConfig, callback);
+
+        const callResults = loggerFake.log.args.map(argSet => argSet.toString());
+
+        this.verify(JSON.stringify(callResults, null, 4));
+    });
+
 });
