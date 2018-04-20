@@ -4,6 +4,7 @@
   "description": "Tests that don't suck example code for talk",
   "main": "index.js",
   "scripts": {
+    "start": "node ./",
     "test": "node ./node_modules/mocha/bin/mocha ./test/*.test.js"
   },
   "author": "",
