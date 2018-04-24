@@ -36,7 +36,7 @@ function widgeTest9000(
 
     return {
         test: signet.enforce(
-            'widget, widgetTestConfig, continuation => undefined',
+            'widget, widgetTestConfig, continuation => sideEffect',
             test)
     };
 

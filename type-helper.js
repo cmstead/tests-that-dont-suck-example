@@ -2,8 +2,18 @@
 
 const signet = require('signet')();
 
-signet.alias('continuation', 'function');
-signet.alias('action', 'function');
+signet.defineDuckType('error', {
+    message: 'string'
+});
+
+signet.alias('nullable', 'variant<null, _>');
+signet.alias('nullableError', 'nullable<error>');
+
+signet.alias('optional', 'variant<undefined, _>');
+signet.alias('sideEffect', 'undefined');
+
+signet.alias('continuation', 'function<optional<nullableError>, [*] => undefined>');
+signet.alias('action', 'function<() => sideEffect>');
 
 
 signet.alias('humTolerance', 'boundedNumber<0, 1>');
