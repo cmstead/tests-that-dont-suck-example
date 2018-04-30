@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>Tests That Don&#x27;t Suck - The Example -- Mochadoc Test Documentation</title>
+
+    <link rel="stylesheet" href="../assets/doc-style.css" media="screen">
+    <link rel="stylesheet" href="../assets/github-gist.css" media="screen">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><span id="library-name">Tests That Don&#x27;t Suck - The Example</span>
+        <span id="subtitle">Mochadoc-Generated Test Documents</span></a>
+    </header>
+
+    <div class="content">
+        <h1>WidgeTest9000</h1>
+<div>
+    <a href="#" class="collapse-all collapse-link">Collapse All</a>
+</div>
+<ul>
+    <ul>
+    <li>
+        <strong>tests a widget with 20 different, increasing voltages</strong>
+    </li>
+    <li>File location: <span class="filename">./test/widgeTest9000.test.js</span></li>
+    <li class="code-sample-wrapper">
+        <div class="code-expand">
+            <a href="#" class="collapse-link"></a>
+        </div>
+        <pre class="code-sample">
+            <code>
+        function () {
+        const widgetConfig &#x3D; dataMother.buildData(&#x27;widgetConfig&#x27;);
+        const widget &#x3D; widgetFactory(widgetConfig);
+        
+        const widgeTestConfig &#x3D; dataMother.buildData(&#x27;widgeTestConfig&#x27;);
+        const callback &#x3D; () &#x3D;&gt; { };
+
+        widgeTest9000.test(widget, widgeTestConfig, callback);
+
+        const setVoltageSpy &#x3D; widgetConnectionFake.setVoltage.getOnCallAction();
+
+        const callResults &#x3D; {
+            callCount: setVoltageSpy.callCount,
+            args: setVoltageSpy.args.map(argSet &#x3D;&gt; argSet.toString())
+        };
+
+        this.verify(JSON.stringify(callResults, null, 4));
+    }
+            </code>
+        </pre>
+    </li>
+</ul>
+<ul>
+    <li>
+        <strong>logs each time the voltage is set</strong>
+    </li>
+    <li>File location: <span class="filename">./test/widgeTest9000.test.js</span></li>
+    <li class="code-sample-wrapper">
+        <div class="code-expand">
+            <a href="#" class="collapse-link"></a>
+        </div>
+        <pre class="code-sample">
+            <code>
+        function () {
+        const widgetConfig &#x3D; dataMother.buildData(&#x27;widgetConfig&#x27;);
+        const widget &#x3D; widgetFactory(widgetConfig);
+        
+        const widgeTestConfig &#x3D; dataMother.buildData(&#x27;widgeTestConfig&#x27;);
+        const callback &#x3D; () &#x3D;&gt; { };
+
+        widgeTest9000.test(widget, widgeTestConfig, callback);
+
+        const callResults &#x3D; loggerFake.log.args.map(argSet &#x3D;&gt; argSet.toString());
+
+        this.verify(JSON.stringify(callResults, null, 4));
+    }
+            </code>
+        </pre>
+    </li>
+</ul>
+</ul>
+    </div>
+
+    <script src="../assets/code-collapse.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>

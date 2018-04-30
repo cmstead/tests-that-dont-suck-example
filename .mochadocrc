@@ -1,0 +1,5 @@
+{
+    "projectName": "Tests That Don't Suck - The Example",
+    "files": "./test/**/*.js",
+    "dest": "./docs/"
+}
