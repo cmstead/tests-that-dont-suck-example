@@ -40,10 +40,10 @@ describe('WidgeTest9000', function () {
             ['setup']
         );
 
-        testHelperFake.setup.onCall(function() {
+        testHelperFake.setup.onCall(function(widget, widgetTestConfig) {
             return {
                 widgetConnection: widgetConnectionFake,
-                maxVoltage: 9
+                maxVoltage: widgetTestConfig.maxVoltage
             };
         });
 
